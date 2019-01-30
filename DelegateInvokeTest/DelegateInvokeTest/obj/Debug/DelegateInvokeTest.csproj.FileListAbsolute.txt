@@ -1,0 +1,12 @@
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Debug\DelegateInvokeTest.exe
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Debug\DelegateInvokeTest.pdb
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Debug\MathCalcLib.dll
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Debug\MathCalcLib.pdb
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.csprojAssemblyReference.cache
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.frmMain.resources
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.Properties.Resources.resources
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.csproj.GenerateResource.cache
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.csproj.CoreCompileInputs.cache
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.csproj.CopyComplete
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.exe
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Debug\DelegateInvokeTest.pdb

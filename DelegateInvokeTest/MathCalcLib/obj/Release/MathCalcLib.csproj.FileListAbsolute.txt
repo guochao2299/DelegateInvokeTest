@@ -1,0 +1,5 @@
+H:\C#Programs\DelegateInvokeTest\MathCalcLib\bin\Release\MathCalcLib.dll
+H:\C#Programs\DelegateInvokeTest\MathCalcLib\bin\Release\MathCalcLib.pdb
+H:\C#Programs\DelegateInvokeTest\MathCalcLib\obj\Release\MathCalcLib.csproj.CoreCompileInputs.cache
+H:\C#Programs\DelegateInvokeTest\MathCalcLib\obj\Release\MathCalcLib.dll
+H:\C#Programs\DelegateInvokeTest\MathCalcLib\obj\Release\MathCalcLib.pdb
