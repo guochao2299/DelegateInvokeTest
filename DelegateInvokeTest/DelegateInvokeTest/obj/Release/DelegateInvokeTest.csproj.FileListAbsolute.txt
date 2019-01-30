@@ -3,3 +3,10 @@ H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Release\DelegateInvokeTe
 H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Release\DelegateInvokeTest.Properties.Resources.resources
 H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Release\DelegateInvokeTest.csproj.GenerateResource.cache
 H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Release\DelegateInvokeTest.csproj.CoreCompileInputs.cache
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Release\DelegateInvokeTest.exe
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Release\DelegateInvokeTest.pdb
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Release\MathCalcLib.dll
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\bin\Release\MathCalcLib.pdb
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Release\DelegateInvokeTest.csproj.CopyComplete
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Release\DelegateInvokeTest.exe
+H:\C#Programs\DelegateInvokeTest\DelegateInvokeTest\obj\Release\DelegateInvokeTest.pdb

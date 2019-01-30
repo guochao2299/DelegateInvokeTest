@@ -7,15 +7,15 @@ namespace MathCalcLib
 {
     public static class MathLib
     {
-        public static bool IsSupportSubOpt = false;
+        public static bool IsSupportSubOpt = true;
 
-        public static int Add(int a,int b)
+        public static float Add(int a,int b)
         {
             return a + b;
         }
 
 #if DEBUG
-        public static int Sub(int a, int b)
+        public static float Sub(int a, int b)
         {
             return a - b;
         }
@@ -26,7 +26,7 @@ namespace MathCalcLib
             return a * 1.0f / b;
         }
 
-        public static int Multy(int a ,int b)
+        public static float Multy(int a ,int b)
         {
             return a * b;
         }

@@ -15,7 +15,7 @@ namespace DelegateInvokeTest
         {
             InitializeComponent();
         }
-
+               
         private void btnCalc_Click(object sender, EventArgs e)
         {
             int opt1st = 0;
@@ -31,7 +31,54 @@ namespace DelegateInvokeTest
                 return;
             }
 
-            txtResult.Text = Convert.ToString(DoTheOperation(opt1st, opt2st, comboOpt.SelectedIndex));
+            Func<int, int, float> operation = GetMathDelegate(comboOpt.SelectedIndex);
+            txtResult.Text = Convert.ToString(operation(opt1st, opt2st));
+            //txtResult.Text = Convert.ToString(DoTheOperation(opt1st, opt2st, comboOpt.SelectedIndex));
+        }
+
+        private Func<int, int, float> GetMathDelegate(int optType)
+        {
+            Func<int, int, float> result = null;
+
+            switch (optType)
+            {
+                case 0:
+                    result= MathCalcLib.MathLib.Add;
+                    break;
+
+                case 1:
+
+                    if (MathCalcLib.MathLib.IsSupportSubOpt)
+                    {
+                        System.Reflection.MethodInfo mInfo = typeof(MathCalcLib.MathLib).GetMethod("Sub", System.Reflection.BindingFlags.Public| System.Reflection.BindingFlags.Static);
+                        if (mInfo == null)
+                        {
+                            MessageBox.Show("MathCalcLib.MathLib类中不包含静态函数Sub");
+                        }
+
+                        Delegate d= Delegate.CreateDelegate(typeof(Func<int, int, float>), mInfo);
+                        result = d as Func<int, int, float>;
+                        break;
+                    }
+                    else
+                    {
+                        result = delegate (int a, int b)
+                          {
+                              return 0;
+                          };
+                    }
+                    break;
+
+                case 2:
+                    result = MathCalcLib.MathLib.Multy;
+                    break;
+
+                case 3:
+                    result= MathCalcLib.MathLib.Div;
+                    break;
+            }
+
+            return result;                
         }
 
         private float DoTheOperation(int a,int b,int optType)
@@ -42,11 +89,21 @@ namespace DelegateInvokeTest
                     return MathCalcLib.MathLib.Add(a , b);
 
                 case 1:
+                    //if (MathCalcLib.MathLib.IsSupportSubOpt)
+                    //{
+                    //    return MathCalcLib.MathLib.Sub(a, b);
+                    //}
+
                     if (MathCalcLib.MathLib.IsSupportSubOpt)
                     {
-                        return MathCalcLib.MathLib.Sub(a, b);
-                    }
+                        System.Reflection.MethodInfo mInfo = typeof(MathCalcLib.MathLib).GetMethod("Sub", System.Reflection.BindingFlags.Static);
+                        if(mInfo==null)
+                        {
+                            MessageBox.Show("MathCalcLib.MathLib类中不包含静态函数Sub");
+                        }
 
+                        return (float)mInfo.Invoke(null, new object[] { a, b });
+                    }
                     break;
 
                 case 2:
